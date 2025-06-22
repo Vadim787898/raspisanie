@@ -95,7 +95,7 @@ while True:
         df=1
     else:
         df=0
-    if date.isoweekday()!=6 or df==1:
+    if date.isoweekday()==1 or date.isoweekday()==2 or date.isoweekday()==3 or date.isoweekday()==4 or date.isoweekday()==5 or (date.isoweekday()==6 and df==1) or (date.isoweekday()==7 and df==0):
         if current_time.hour==22 and current_time.minute==0 and current_time.second==0:
             qw=0
             for i in range(len(kj[zx])):
